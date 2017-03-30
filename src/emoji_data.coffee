@@ -132,7 +132,7 @@ class EmojiData
   # The RegExp matcher we use to do .scan() efficiently.
   # needs to be defined after self.chars so not at top of file for now...
   FBS_REGEXP = new RegExp(
-    "(?:#{EmojiData.chars({include_variants: true}).join("|").replace('\u002A', '\\\u002A'))})",
+    "(?:#{EmojiData.chars({include_variants: true}).join("|").replace('\u002A', '\\\u002A')})",
     "g"
   )
 
