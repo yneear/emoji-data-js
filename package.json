@@ -18,6 +18,7 @@
     "test":       "mocha test/*.spec.coffee",
     "pretest":    "npm run-script compile",
     "prepublish": "npm run-script compile",
+    "postinstall": "npm run-script compile",
     "compile":    "coffee --bare --output ./lib --compile ./src/*.coffee",
     "bench":      "coffee ./scripts/bench.coffee"
   },
