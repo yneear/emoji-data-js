@@ -16,24 +16,11 @@
   "main": "./lib/emoji_data.js",
   "scripts": {
     "test":       "mocha test/*.spec.coffee",
-    "pretest":    "npm run-script compile",
-    "prepublish": "npm run-script compile",
-    "postinstall": "npm run compile",
     "compile":    "coffee --bare --output ./lib --compile ./src/*.coffee",
     "bench":      "coffee ./scripts/bench.coffee"
   },
   "dependencies": {
-    "underscore.string":  "^2.3.3",
-    "benchmark":          "^1.0.0",
-    "chai":               "^1.9.1",
-    "codo":               "^2.0.9",
-    "coffee-errors":      "^0.8.5",
-    "coffee-script":      "^1.7.1",
-    "lodash":             "^2.4.1",
-    "microtime":          "^2.1.2",
-    "mocha":              "^1.18.2",
-    "sinon":              "^1.9.1",
-    "sinon-chai":         "^2.5.0"
+    "underscore.string":  "^2.3.3"
   },
   "engines": {
     "node":               ">=0.10.0",
